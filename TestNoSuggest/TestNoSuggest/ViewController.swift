@@ -10,11 +10,10 @@ import UIKit
 
 
 class ViewController: UIViewController {
-    let service = DI.providers.resolve(SimpleServiceProtocol.self)!
+	let service = DI.providers.resolve(SimpleServiceProtocol.self)!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        service.foo()
-    }
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		service.foo() //NO sussestions
+	}
 }
